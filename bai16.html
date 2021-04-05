@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+    <meta charset="utf-8" />
+     <title> Bài 16 </title>
+</head>
+<body>
+    <h1> <b> Travel reservation form </b> </h1>
+    
+    <h2> <b> * denotes mandotory </b> </h2>
+    
+    <form action="" method="post">
+        <p> Full name*:<br>
+            <input type="text" name="txtName" placeholder="FirstName LastName" required  value=""  size="20" maxlength="20"> </p>
+
+        <p> Email address*:<br>
+         <input type="email" name="txtEmail"  placeholder="EMAIL_ADDRESS" required value="" size="20" maxlength="20"> </p>
+
+    
+         <td align="right"> Select Tour Package* </td>
+         <td> <select>
+             <option> Goa</option>
+             <option> ...</option>
+         </select> </td>
+
+         <p> Date of Birth:<br>
+            <input type="date" name="txtDate" value="" size="20" maxlength="20"> </p>
+
+        <p> Number of person*:<br>
+                <input type="number" name="txtNumber"  placeholder="UNKNOWN_TYPE" required value="" size="20" maxlength="20"> </p>
+       
+         <p>What would you want to avail?*</p>
+         <p> Boarding <input type="checkbox" /> </p>
+         <br> Fooding <input type="checkbox" /> </br>  
+         <br> Sight Seeing <input type="checkbox" /> </br>  
+         
+ <p> Discout Coupon code:<br>
+ <input type="text" name="txtCode"  placeholder="UNKNOWN_TYPE" required value="" size="20" maxlength="20"> </p>
+            
+ <p> Terms and condition*</p>
+ <p> 
+    <td> <select>
+        <option value="Value 1" selected="selected"> I agree </option>
+        <option value="Value 2"> I disagree </option>
+    </select> 
+    </td> 
+</p>
+ 
+<p> 
+    <td> 
+        <select name="gh">
+        <option value="Value 1" selected="selected"> I agree </option>
+        <option value="Value 2"> I disagree </option>
+        </select> 
+    </td> 
+</p>
+
+<p> 
+    <td> <select name="gh" multiple="multiple">
+        <option value="Value 1" selected="selected"> I agree </option>
+        <option value="Value 2"> I disagree </option>
+    </select> 
+    </td> 
+</p>
+
+<input type="radio" value="0" name="Terms & condition"/> I agree 
+<input type="radio" value="0" name="Terms & condition"/> I disagree 
+
+<br> </br>
+<td align="right"> <input type = "button" value="Complete reservation">   </td>
+
+ <p><input type="Submit" value="Cr"> </p>    <input type="checkbox" />
+
+        </form>
+
+
+</body>
+</html>
