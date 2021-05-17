@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0 auto;
+        padding: 0px;
+    }
+    .wrapper{
+        width: 960px;
+        background-color:rgb(53, 197, 233) ;
+    }
+    .header{
+        height: 60px;
+        border-bottom: 4px dotted white;
+        position: relative;
+    }
+    .header ul{
+        list-style: none;
+    }
+    .header li{
+        display: inline-block;
+        padding:20px 20px;
+        position: relative;
+    }
+    .header li:hover{
+        background-color: tomato;
+    }
+    .header li > .sub-menu{
+        display: none;
+        position: absolute;
+        background-color: red;
+    }
+    .header li:hover .sub-menu{
+        display: block;
+    }
+
+    .header a{
+        text-decoration:none;
+        color:white;
+        font-size: 150%;
+
+    }
+    .header p{
+        position: absolute;
+        float: right;
+        top:-19px;
+        right:20px;
+        color: white;
+        font-size: 200%;
+        text-shadow: rgb(62, 51, 160) 15px -6px 0.3em;
+    }
+    .content{
+        height: 500px;
+        width: 100%;
+        border-bottom: 4px dotted white;
+
+    }
+    .content-left{
+        width: 50%;
+        color: white;
+        float: left;
+
+    }
+    .content-left h2{
+        font-size: 200%;
+    }
+    .content-left p{
+        font-size: 100%;
+    }
+    .content-left button{
+        border: 1px blue dashed;
+        font-size: 120%;
+    }
+    .content-left td{
+        padding-left: 40px;
+    }
+    .content-left input{
+        border-radius: 5% ;
+        border: rgb(6, 6, 243) 2px solid;
+    }
+    .content-right{
+        width: 45%;
+        float: right;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+
+    }
+    .content-right h2{
+        color: blue;
+        font-size: 250%;
+        padding-left: 30px;
+        text-shadow: blue 3px -6px 0.2em;
+    }
+    .content-right p{
+        color: blue;
+        padding-left: 50px;
+        font-size: 150%;
+     
+    }
+    .footer{
+        text-align: center;
+        color: white;
+    }
+</style>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Product</a></li>
+                <li><a href="">Services</a>
+                <ul class="sub-menu">
+                    <li><a href="">International Tours</a></li>
+                    <li><a href="">Local Tours</a></li>
+                </ul>
+                </li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+            <p>Sky World</p>
+        </div>
+        <div class="content">
+            <div class="content-left">
+                <h2>Registration information</h2>
+                <p>Star your travel planning right now with our on-line tour registraion</p>
+            <table>
+                <tr>
+                    <td><label for="title">Title</label></td>
+                    <td><input list="title" size="2">
+                    <datalist id="title">
+                        <option value="Mr."></option>
+                        <option value="Mrs."></option>
+                    </datalist> </td>
+                </tr>
+                <tr>
+                    <td><label for="name">Full Name*</label></td>
+                    <td><input type="text" name="" id="name" size="30" placeholder="First Name" required></td>
+                </tr>
+                <tr>
+                    <td><label for="Address">Mailing Address</label></td>
+                    <td><input type="text" name="" id="Address" size="30" placeholder="Mailing Address"></td>
+                </tr>
+                <td><label for="City">City</label></td>
+                <td><input type="text" name="" id="City" size="30" placeholder="City"></td>
+                <tr>
+                    <td><label for="Contry">Country</label></td>
+                    <td><input type="text" name="" id="Contry" size="30" placeholder="Country"></td>
+                </tr>
+                <tr>
+                    <td><label for="Spec">Specific questions or requests about your tour</label></td>
+                    <td><textarea name="" id="Spec" cols="32" rows="5" placeholder="Specific questions or requests about your tour"></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="button"></label></td>
+                    <td id="s_r">
+                        <input type="submit" id="button_1" value="Submit">
+                        <input type="reset" id="button_2" value="Reset">
+                    </td>
+            </table>
+            </div>
+            <div class="content-right">
+                <img src="../img/phongcanh.PNG" alt="" alle>
+                <h2>You've arrived.</h2>
+                <p>Journeys as great as the destinations</p>
+            </div>
+            
+        </div>
+        <div class="footer">
+            <p>@2016 SKy World Tours. All rights reserved.</p>
+            <p>Contact information:Student Name|Student ID| Testing date: 16 Sept 2016</p>
+        </div>
+    </div>
+</body>
+</html>

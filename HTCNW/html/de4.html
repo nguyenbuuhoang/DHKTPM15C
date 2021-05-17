@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0 auto;
+        padding:0;
+    }
+    .body{
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .wrapper{
+        width: 960px;
+    }
+    .header{
+        background-color: saddlebrown;
+        height: 60px;
+        padding-top: 15px;
+        padding-left: 30px;
+        color:sandybrown;
+        font-weight: normal;
+        text-shadow: white -8px 1px 0.5em;
+        font-size: 150%;
+    }
+    .menu{
+        width: 100%;
+        height: 40px;
+        background-color: white;
+    }
+    .menu ul{
+        list-style: none;
+    }
+    .menu li{
+    display: inline-block;
+    padding:8px 25px;
+    position: relative;
+    }
+    .menu li:hover{
+        background-color: rebeccapurple;
+    }
+    .menu li> .sub-menu{
+        display: none;
+        position: absolute;
+    }
+    .menu li:hover .sub-menu{
+        display: block;
+       
+    }
+    .menu a{
+        font-size: 150%;
+        color: saddlebrown;
+        text-decoration: none;
+    }
+    .container{
+        width: 100%;
+        position: relative; 
+        height: 400px;
+    }
+    .container-left{
+        width: 65%;
+        float: left;
+        border-right: 1px solid rgb(230, 238, 243);
+    }
+    .container-left h2{
+        color:darkgoldenrod;
+    }
+    .container-left i{
+        color:darkgoldenrod;
+    }
+    .container-right{
+        width: 35%;
+        float: right;
+     
+    }
+    .container-right-top{
+        background-color: rgb(241, 205, 229);
+        border-top-left-radius: 10%;
+        border-top-right-radius: 10%;
+        position: absolute;
+        float: right;
+        top: 10px;
+        right: 65px;
+        height: auto;
+        width: 250px;
+
+    }
+    .container-right-top h2 {
+        padding-left: 20px;
+    }
+    .container-right-top ul{
+        padding-left: 60px;
+    }
+    .container-right-bottom{
+        float:right;
+        position: absolute;
+        top:200px;
+
+    }
+    .container-right-bottom h2{
+        padding-left: 40px;
+    }
+    .container-right-bottom img{
+        border: black 10px solid;
+        float: left;
+    }
+    .container-left button{
+        background-color: rgb(18, 73, 18);
+        color: white;
+    }
+    .container-left input{
+        border: none;
+        border-bottom: 1px solid gray;
+    }
+    
+</style>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <h2>AUTUMN TRAVEL COMPANY</h2>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Products</a></li>
+                <li><a href="">Services</a>
+                <ul class="sub-menu">
+                    <li><a href="">Our Services</a></li>
+                    <li><a href="">Third party services</a></li>
+                </ul>
+                </li>
+                <li><a href="">Order</a></li>
+            </ul>
+        </div>
+        <div class="banner">
+            <img src="../img/bãi.PNG" alt="bai"width="100%">
+        </div>
+        <div class="container">
+            <div class="container-left">
+                <h2>Sign up for membership benefits</h2>
+                <i><p>Our philosophical values are transparency, respect, formality and responsibility. Our stimulus is your enthusiasm. Our motto is your satisfaction.</p></i>
+                <br></br>
+                <input type="text" size="60" placeholder="Username">
+                <br></br>
+                <input type="text" size="60" placeholder="E-Mail">
+                <br></br>
+                <input type="text" size="60" placeholder="Password">
+                <br></br>
+                <input type="text" size="60" placeholder="Retype password">
+                <br></br><br></br>
+                <button>Sign Me Up</button>
+            </div>
+            <div class="container-right">
+                <div class="container-right-top">
+                    <h2>Links</h2>
+                    <br></br>
+                    <ul type="square">
+                        <li>Make your Own Tour</li>
+                        <li>Maldives Tours</li>
+                        <li>Nature & Adventure</li>
+                        <li>Readymade Tours</li>
+                        <li>Europe Tours</li>
+                        <li>Rusia Tours</li>
+
+
+                    </ul>
+                </div>
+                <div class="container-right-bottom">
+                    <h2>More info</h2>
+                    <br></br>
+                    <img src="../img/hoa.PNG" alt="" align="">
+                    <p>Our purpose is the client who gives to us the opportunity to serve and to make known the reality around the world.</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <img src="../img/fotter.PNG" alt="fotter" width="100%">
+        </div>
+
+    </div>
+</body>
+</html>
