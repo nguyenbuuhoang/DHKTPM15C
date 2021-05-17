@@ -1,0 +1,8 @@
+﻿.example1 {
+    background-image:url(../img/bg.jpg), url(../img/flw.jpg);
+    background-position: right bottom, left top;
+    background-repeat: no-repeat, repeat;
+}
+p {
+    visibility:hidden;
+}

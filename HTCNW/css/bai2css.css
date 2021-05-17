@@ -1,0 +1,27 @@
+#container {
+    width: 800px; height: 500px; background-color: gray;
+}
+.p1 {
+    text-indent: 1cm; color: red; text-align: justify;
+}
+.p2 {
+    text-align: right; color: blue;
+}
+.p3{
+    text-align: center; color: green;
+}
+.p4{
+    text-align: left; color: brown;
+}
+.p5 {
+    text-decoration: underline; color: pink; 
+}
+.p6 {
+    text-decoration: line-through; color: purple;
+}
+.p7 {
+     text-decoration: overline; color: red; 
+}
+.p8{
+    text-decoration: blink; text-align: justify; color: blue; text-shadow: 4px 4px 8px;
+}
